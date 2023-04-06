@@ -1,54 +1,50 @@
-# Home_Sales
+# **Home_Sales**
 
-## Module 22 Challenge
+## **Module 22 Challenge: Big Data**<br>
+- **(Querying with PySpark, Partitioning and Caching)**
 
 In this challenge, you'll use your knowledge of SparkSQL to determine key metrics about home sales data. Then you'll use Spark to create temporary views, partition the data, cache and uncache a temporary table, and verify that the table has been uncached.
 
-Before You Begin
-Create a new repository for this project called, Home_Sales. Do not add this homework to an existing repository.
+## Before You Begin
+1. Create a new repository for this project called, Home_Sales. Do not add this homework to an existing repository.
 
-Clone the new repository to your computer.
+2. Clone the new repository to your computer.
 
-Push your changes to GitHub.
+3. Push your changes to GitHub.
 
-Files
-Download the following files to help you get started:
+## Instructions
+1. Rename the Home_Sales_starter_code.ipynb file as Home_Sales.ipynb.
 
-Module 22 Challenge filesLinks to an external site.
+2. Import the necessary PySpark SQL functions for this assignment.
 
-Instructions
-Rename the Home_Sales_starter_code.ipynb file as Home_Sales.ipynb.
+3. Read the home_sales_revised.csv data in the starter code into a Spark DataFrame.
 
-Import the necessary PySpark SQL functions for this assignment.
+4. Create a temporary table called home_sales.
 
-Read the home_sales_revised.csv data in the starter code into a Spark DataFrame.
+5. Answer the following questions using SparkSQL:
 
-Create a temporary table called home_sales.
+    - What is the average price for a four-bedroom house sold for each year? Round off your answer to two decimal places.
 
-Answer the following questions using SparkSQL:
+    - What is the average price of a home for each year it was built that has three bedrooms and three bathrooms? Round off your answer to two decimal places.
 
-What is the average price for a four-bedroom house sold for each year? Round off your answer to two decimal places.
+    - What is the average price of a home for each year that has 9three bedrooms, three bathrooms, two floors, and is greater than or equal to 2,000 square feet? Round off your answer to two decimal places.
 
-What is the average price of a home for each year it was built that has three bedrooms and three bathrooms? Round off your answer to two decimal places.
+    - What is the "view" rating for homes costing more than or equal to $350,000? Determine the run time for this query, and round off your answer to two decimal places.
 
-What is the average price of a home for each year that has three bedrooms, three bathrooms, two floors, and is greater than or equal to 2,000 square feet? Round off your answer to two decimal places.
+6. Cache your temporary table home_sales.
 
-What is the "view" rating for homes costing more than or equal to $350,000? Determine the run time for this query, and round off your answer to two decimal places.
+7. Check if your temporary table is cached.
 
-Cache your temporary table home_sales.
+8. Using the cached data, run the query that filters out the view ratings with an average price of greater than or equal to $350,000. Determine the runtime and compare it to uncached runtime.
 
-Check if your temporary table is cached.
+9. Partition by the "date_built" field on the formatted parquet home sales data.
 
-Using the cached data, run the query that filters out the view ratings with an average price of greater than or equal to $350,000. Determine the runtime and compare it to uncached runtime.
+10. Create a temporary table for the parquet data.
 
-Partition by the "date_built" field on the formatted parquet home sales data.
+11. Run the query that filters out the view ratings with an average price of greater than or equal to $350,000. Determine the runtime and compare it to uncached runtime.
 
-Create a temporary table for the parquet data.
+12. Uncache the home_sales temporary table.
 
-Run the query that filters out the view ratings with an average price of greater than or equal to $350,000. Determine the runtime and compare it to uncached runtime.
+13. Verify that the home_sales temporary table is uncached using PySpark.
 
-Uncache the home_sales temporary table.
-
-Verify that the home_sales temporary table is uncached using PySpark.
-
-Download your Home_Sales.ipynb file and upload it into your "Home_Sales" GitHub repository.
+14. Download your Home_Sales.ipynb file and upload it into your "Home_Sales" GitHub repository.
